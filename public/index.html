@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/public/styles.css">
+        <title>sharkcat</title>
+        <link rel="icon" type="image/x-icon" href="/public/assets/carebear_favicon.gif">
+    </head>
+
+    <body>
+      <div id="page">
+        <div class="header"></div>
+
+        <div class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about-me</a>
+            <a href="writing.html">writing</a>
+            <a href="shrines.html">shrines</a>
+            <a href="updates.html">update-log</a>
+            <div class="dropdown">
+                <span>misc ↴</span>
+            <div class="dropdown-content">
+                sticker book<br>
+                dollhouse<br>
+                ---<br>
+                <a href="/public/graphics.html">graphics</a><br>
+                ---<br>
+                cliques<br>
+                fanlisting<br>
+                webrings<br>
+            </div>
+            </div>
+        </div>
+		
+
+        <div class="top_scroll">
+          <marquee onmouseout="start()" onmouseover="stop()">
+            <img src="/public/assets/88x31/css.png">
+            <img src="/public/assets/88x31/learnhtml.gif">
+            <a href="https://neocities.org/"><img src="/public/assets/88x31/neocitiesnow.png"></a>
+            <img src="/public/assets/88x31/tra.gif">
+            <img src="/public/assets/88x31/nocookie.gif">
+          </marquee>
+        </div>
+
+        <div class="content_wrapper">
+
+          <div class="sidebar">
+            <br>
+            <center><b>SHARKCAT</b></center>
+            <center>HOME</center>
+            <br>
+            <!-- © wdisseny -->
+            <div id="contain_moon">
+              <div>The moon today</div>
+              <div></div>
+              <div>.</div>
+              <div>.</div>
+            </div>
+            <script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=&lightColor=rgb(250,250,250)&shadeColor=rgb(10,9,10)&t&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML="Next full moon<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()</script>
+            <br>
+
+          </div>
+
+          	<div class="content">
+			    <!--<b>if you know me or are my friend please <em>ignore</em> like half this site thank you <3</b><br><br>
+            	this is version 2.0 of my neocities site cause i think i went too overboard with the first version and was overwhelmed so im starting from the ground up,
+            	but keeping elements i liked *cough* pagedoll *cough* <br><br>gonna try to make complete pages before releasing them so this site isnt a complete shithole :skull:
+            	<br><br>source code link in the footer, go crazy idk we're all nerds here. live laugh open source. im shit at coding so ignore whatever mess you may encounter, 
+            	as long as it functions i do not care about how i got there <br><br>-->
+				to do:
+				<ul>
+					<li>publish updated site to neocities</li>
+					<li>shrines</li>
+					<li>ao3 guide</li>
+        			<li>add alt text</li>
+        			<li>collections e,g, stickers, dolls, gifs, buttons, picrews etc</li>
+        			<li>quiz results</li>
+        			<li>cliques, fanlistings, webrings</li>
+        			<li>fix hovering over moon cursor</li>
+				</ul>
+          	</div>
+
+        </div>
+        
+        <div class="bottom_scroll">
+            <marquee onmouseout="start()" onmouseover="stop()">
+                <a href="https://gson.neocities.org/web3"><img src="/public/assets/88x31/noweb32.gif"></a>
+                <img src="/public/assets/88x31/chrome2.gif">
+                <img src="/public/assets/88x31/anarchynow.gif">
+                <img src="/public/assets/88x31/fuckfb.png">
+                <a href="https://en.wikipedia.org/wiki/Right_to_repair"><img src="/public/assets/88x31/right to repair.png"></a>
+                <a href="https://ublockorigin.com/"><img src="/public/assets/88x31/ublock-now.png"></a>
+                <a href="https://www.iso.org/iso-8601-date-and-time-format.html"><img src="/public/assets/88x31/iso8601.png"></a>
+                <a href="https://blog.archive.org/2023/03/25/the-fight-continues/"><img src="/public/assets/88x31/ia.png"></a>
+            </marquee>
+        </div>
+
+        <div class="footer">
+            2023-2023
+            <a href="https://neocities.org/site/sharkcat">neocities profile</a>
+            <a href="github link here">source code</a>
+            <a href="sitemap.html">sitemap</a>
+            <a href="credits.html">credits</a>
+        </div>
+
+        <div class="pagedoll">
+            <a href="https://en.wikipedia.org/wiki/Witch_Hat_Atelier" target="_blank"><img src="/public/assets/sasaran.png" height="250px" title="Sasaran from Witch Hat Atelier"/></a>
+        </div>
+      </div>
+    </body>
+</html>
