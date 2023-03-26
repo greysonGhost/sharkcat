@@ -1,12 +1,10 @@
-# only run on changes to master
+name: Deploy to neocities
+
+# only run on changes to main
 on:
   push:
     branches:
-      - master
-
-concurrency: # prevent concurrent deploys doing strange things
-  group: deploy-to-neocities
-  cancel-in-progress: true
+      - main
 
 jobs:
   deploy:
@@ -14,20 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    # Set up any tools and build steps here
-    # This example uses a Node.js toolchain to build a site
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: lts/*
-    - name: Install deps and build
-      run: |
-        npm i
-        npm run build
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@v1
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: false
-        dist_dir: public
+        cleanup: true
+        dist_dir: site
