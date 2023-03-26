@@ -1,11 +1,11 @@
 /* CURSORS */
 
 a, button {
-    cursor: url("/public/assets/click_ac.png"), url("/public/assets/click_ac.cur"), pointer;
+    cursor: url("/public/assets/click_ac.png"), pointer;
 }
 
 html, body {
-    cursor: url("/public/assets/point_ac.png"), url("/public/assets/point_ac.cur"), default;
+    cursor: url("/public/assets/point_ac.png"), default;
     height: 100%;
 }
 
