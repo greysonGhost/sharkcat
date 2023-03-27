@@ -1,11 +1,11 @@
 /* CURSORS */
 
 a, button {
-    cursor: url("/public/assets/click_ac.png"), pointer;
+    cursor: url("/assets/click_ac.png"), pointer;
 }
 
 html, body {
-    cursor: url("/public/assets/point_ac.png"), default;
+    cursor: url("/assets/point_ac.png"), default;
     height: 100%;
 }
 
@@ -24,7 +24,7 @@ ul {
 }
 
 body {
-    background: #050a38 url("/public/assets/backstar.gif");
+    background: #050a38 url("/assets/backstar.gif");
 }
 
 .header, .navbar, .top_scroll, .bottom_scroll, .content_wrapper, .sidebar, .content, .footer {
@@ -34,7 +34,7 @@ body {
 }
 
 .header { 
-    background: #374a7a url("/public/assets/wha_banner_2.png");
+    background: #374a7a url("/assets/wha_banner_2.png");
     height: 90px;
     /*display: flex;
     /*justify-content: center;
@@ -52,13 +52,13 @@ body {
 }
 
 .top_scroll, .bottom_scroll {
-    background: #050a38 url("/public/assets/starbub2.jpg");
+    background: #050a38 url("/assets/starbub2.jpg");
     height: 31px;
 }
 
 .content_wrapper {
     background: #536aa1;
-    /*background-image:url("/public/assets/bluedots.png");*/
+    /*background-image:url("/assets/bluedots.png");*/
     display: flex;
     height: min-content
 }
