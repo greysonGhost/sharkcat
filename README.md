@@ -2,3 +2,5 @@
 
 personal neocities site<br>
 https://sharkcat.neocities.org/
+
+if you copy + paste everything, youre just shitty, dont do it. use common sense
