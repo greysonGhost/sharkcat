@@ -33,7 +33,8 @@ body {
 }
 
 .header { 
-    background: #374a7a url("../assets/wha_banner_2.png");
+    background: #374a7a url("../assets/banner.jpg");
+    width: auto;
     height: 90px;
 }
 
