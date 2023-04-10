@@ -1,3 +1,9 @@
+@font-face { font-family: Ubuntu; src: url("../assets/Ubuntu/Ubuntu-Regular.ttf"); } 
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
 /* CURSORS */
 
 a, button {
