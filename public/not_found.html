@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles/error.css">
         <title>sharkcat</title>
         <link rel="icon" type="image/x-icon" href="assets/carebear_favicon.gif">
         <meta charset="UTF-8">
     </head>
+
+    <style>
+        @font-face { font-family: Ubuntu; src: url("assets/Ubuntu/Ubuntu-Regular.ttf"); } 
+        html, body {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        }
+
+        /* CURSORS */
+
+        a, button {
+            cursor: url("assets/click_ac.png"), pointer;
+        }
+
+        html {
+            cursor: url("assets/point_ac.png"), default;
+            height: fit-content;
+        }
+
+        a, a:hover, a:visited {
+            color: black;
+        }
+
+        ul { 
+            margin: 2px 0;
+        }
+
+        #page {
+            margin: auto;
+            padding: 3px;
+            width: 700px;
+        }
+
+        body {
+            background: #050a38 url("assets/backstar.gif");
+        }
+
+        .header, .navbar, .top_scroll, .bottom_scroll, .content_wrapper, .sidebar, .content, .footer {
+            margin: 3px;
+            padding: 5px;
+        }
+
+        .content_wrapper {
+            background: #536aa1;
+        }
+
+        .content {
+            background: #e2eafa;
+            overflow: scroll;
+            height: fit-content;
+            padding: 30px;
+            text-align: center;
+        }
+
+    </style>
 
     <body>
         <div id="page">
