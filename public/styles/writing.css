@@ -1,0 +1,89 @@
+@font-face { font-family: Ubuntu; src: url("../assets/Ubuntu/Ubuntu-Regular.ttf"); } 
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+/* CURSORS */
+
+a, button {
+    cursor: url("../assets/click_ac.png"), pointer;
+}
+
+html, body {
+    cursor: url("../assets/point_ac.png"), default;
+    height: fit-content;
+}
+
+a, a:hover, a:visited {
+        color: black;
+}
+
+ul { 
+    margin: 2px 0;
+}
+
+#page {
+    margin: auto;
+    padding: 3px;
+    width: 700px;
+}
+
+.content-about {
+    display: flex;
+    max-height: 150px;
+    margin: 3px;
+    padding: 5px;
+}
+
+.title {
+    margin: 3px;
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags {
+    width: 25%;
+    margin: 3px;
+    padding: 5px;
+    overflow: scroll;
+}
+
+.about {
+    width: 25%;
+    margin: 3px;
+    padding: 5px;
+    overflow: scroll;
+}
+
+.main-content {
+    max-height: 550px;
+    overflow: scroll;
+    margin: 3px;
+    padding: 5px;
+}
+
+.fic {
+    overflow: scroll;
+    margin: 3px;
+    padding: 5px;
+    height: 510px
+}
+
+.footer {
+    height: 20px;
+    margin: 3px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagedoll {
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+}
