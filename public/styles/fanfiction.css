@@ -4,8 +4,6 @@ html, body {
     font-size: 14px;
 }
 
-/* CURSORS */
-
 a, button {
     cursor: url("../assets/click_ac.png"), pointer;
 }
@@ -16,11 +14,11 @@ html, body {
 }
 
 a, a:hover, a:visited {
-        color: black;
+    color: black;
 }
 
 ul { 
-    margin: 2px 0;
+margin: 2px 0;
 }
 
 #page {
@@ -29,29 +27,33 @@ ul {
     width: 700px;
 }
 
+.navbar, .content_wrapper, .content, .footer {
+    margin: 3px;
+    padding: 5px;
+}
+
 .content-about {
     display: flex;
-    max-height: 150px;
+    height: 110px;
     margin: 3px;
     padding: 5px;
 }
 
 .navbar {
-    background: #748cc3;
     height: 50px;
     display: flex;
     justify-content: space-evenly; /* align horizontally */
     align-items: center; /* align vertically */
 }
 
-.title {
+/*.title {
     margin: 3px;
     padding: 5px;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .tags {
     width: 25%;
@@ -61,28 +63,27 @@ ul {
 }
 
 .about {
-    width: 25%;
+    width: 75%;
     margin: 3px;
     padding: 5px;
     overflow: scroll;
 }
 
-.main-content {
-    max-height: 550px;
+.content-wrapper {
+    height: fit-content;
     overflow: scroll;
     margin: 3px;
     padding: 5px;
 }
 
-.fic {
+.content {
     overflow: scroll;
     margin: 3px;
     padding: 5px;
-    height: 510px
+    height: 450px;
 }
 
 .footer {
-    background: #748cc3;
     height: 50px;
     display: flex;
     justify-content: space-around;
