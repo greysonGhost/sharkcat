@@ -1,84 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles/main.css">
-        <title>sharkcat</title>
-        <link rel="icon" type="image/x-icon" href="assets/carebear_favicon.gif">
-        <meta charset="UTF-8">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/responsive.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+    <link rel="icon" type="image/x-icon" href="assets/main/ribbonEelIcon.png">
+    <title>sharkcat - home</title>
+    <style>
+        main, footer {
+            width: 40vw;
+        }
+        footer {
+            margin: auto;
+            padding-top: 2rem;
+        }
 
-    <body>
-      <div id="page">
-        <div class="header"></div>
+        @media (max-width: 1200px) {
+            main {
+                width: 60%;
+            }
+        }
 
-        <div class="navbar">
-          <a href="index.html">home</a>
-          <a href="about.html">about me
-          <a href="creations.html">creations</a>
-          <a href="shrines.html">shrines</a>
-          <a href="collections.html">collections</a>
-          <a href="sitemap.html">sitemap</a>
+        @media (max-width: 700px) { 
+            main {
+                width: 98%;
+            }
+
+            footer {
+                height: 4em;
+            }
+        }
+
+        #first {
+            width: 49%;
+            float: left; 
+        }
+        #second {
+            width: 49%;
+            float: left;
+            overflow: hidden; /* if you don't want #second to wrap below #first */
+            /*margin: 0 1%;*/
+        }
+
+        #tamanotchi {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="assets/main/header.png">
+        </header>
+
+        <div id="nav-wrapper">
+            <nav>
+                <a href="index.html">home</a> | <a href="aboutMe.html">about</a> | <a href="creations.html">creations</a> | <a href="shrines.html">shrines</a> | <a href="collections.html">collections</a> | <a href="sitemap.html">sitemap</a>
+            </nav>
         </div>
 
-        <div class="top_scroll">
-          <marquee onmouseout="start()" onmouseover="stop()">
-            <a href="http://www.mabsland.com/Adoption.html"><img src="assets/Censor_14c.gif" height="31px"></a>
-            <img src="assets/88x31/css.png">
-            <img src="assets/88x31/learnhtml.gif">
-            <a href="https://neocities.org/"><img src="assets/88x31/neocitiesnow.png"></a>
-            <img src="assets/88x31/tra.gif">
-            <img src="assets/88x31/nocookie.gif">
-          </marquee>
-        </div>
-
-        <div class="content_wrapper">
-          <div class="sidebar">
-            <br>
-            <center><b>SHARKCAT</b></center>
-            <center>HOME</center>
-            <br>
-            
-            <center><a href="https://sharkcat.123guestbook.com/">sign my guestbook!</a></center>
-            <br>
-            <center><script src="https://nuthead.neocities.org/ring/ring.js"></script></center>
-          </div>
-
-          	<div class="content">
-              welcome to my website, enjoy your stay. this thing is barely being held together with a piece of tape rn so if something doesn't work
-              i will get around to fixing it eventually :D<br>
-              <br>
-              this site is for me to scream about my interests and whatever else i have going on in my life. some pages may be incomplete.<br>
-              <br>
-              this site was made and tested on only firefox so if something doesn't look correct then i apologise<br>
-              <br>
-              <img src="assets/gifs/webweaving.gif"><br>
+        <main>
+            <div>
+                <p>
+                    Welcome to my website! This site is for me to scream about my interests, things I've made, things I'm working on, anything interesting I have going on in my life, etc, etc.
+                </p>
+                <p>
+                    This site is a continuous work in progress as I add and/or remove content/pages or even redesign the whole thing so some things may change around on a semi-regular basis depending on how busy I am.
+                </p>
+                <p>
+                    Suggested age rating is like teen and up cause of language. pages that have more adult content will have disclaimers
+                </p>
+                <p>
+                    As always, site is best viewed on desktop, but I'm trying to make it manageable to browse on mobile for my own sanity. Enjoy :D
+                </p>
             </div>
-        </div>
-        
-        <div class="bottom_scroll">
-            <marquee onmouseout="start()" onmouseover="stop()">
-                <a href="https://gson.neocities.org/web3"><img src="assets/88x31/noweb32.gif"></a>
-                <img src="assets/88x31/chrome2.gif">
-                <img src="assets/88x31/anarchynow.gif">
-                <img src="assets/88x31/fuckfb.png">
-                <a href="https://en.wikipedia.org/wiki/Right_to_repair"><img src="assets/88x31/right to repair.png"></a>
-                <a href="https://ublockorigin.com/"><img src="assets/88x31/ublock-now.png"></a>
-                <a href="https://www.iso.org/iso-8601-date-and-time-format.html"><img src="assets/88x31/iso8601.png"></a>
-                <a href="https://blog.archive.org/2023/03/25/the-fight-continues/"><img src="assets/88x31/ia.png"></a>
-            </marquee>
-        </div>
+            <div id="wrapper">
+                <div id="first">
+                    <a href="https://sharkcat.123guestbook.com/" target="_blank">guestbook</a><br>
+                    <a href="https://neocities.org/site/sharkcat" target="_blank">neocities profile</a><br>
+                    <a href="https://github.com/greysonGhost/sharkcat" target="_blank">source code</a><br>
+                    <a href="updateLog.html">update log</a><br>
+                    <a href="credits.html">credits</a>
+                </div>
+                <div id="second">
+                    "I think everyone's a bit bored with boy-girl romances anyway," he said. "I think the worlds had enough of those, to be honest."<br>- Alice Oseman, Radio Silence
+                </div>
+            </div>
 
-        <div class="footer">
-          2023-2023
-          <a href="https://neocities.org/site/sharkcat">neocities profile</a>
-          <a href="https://github.com/greysonGhost/sharkcat">source code</a>
-          <a href="updates.html">update log</a>
-          <a href="credits.html">credits</a>
-        </div>
+        </main>
 
-        <div class="pagedoll">
-            <a href="https://en.wikipedia.org/wiki/Witch_Hat_Atelier" target="_blank"><img src="assets/sasaran.png" height="250px" title="Sasaran from Witch Hat Atelier"/></a>
+    </div>
+    <footer>
+        <!--center-->
+        <div id="center-pre" style="padding-bottom: 0.5rem">
+            <div style="padding-right: 0.25rem">
+                2023-2023
+            </div>
+            <div style="padding-left: 0.25rem">
+                <a href="credits.html#email">contact</a>
+            </div>
+            
         </div>
-      </div>
-    </body>
+        <div id="center-pre">
+            <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+            <!--<a href="http://www.mabsland.com/Adoption.html"><img src="assets/buttons/web14.gif" target="_blank" title="rating may increase if i decide to post my smut here"></a>-->
+        </div>
+    </footer>
+
+    <div id="tamanotchi">
+        <a href="http://tamanotchi.world/4174c" target="_blank"><img src="http://tamanotchi.world/i2/4174" alt="It's tamaNOTchi! Click to feed!" title="my tamaNOTchi ruffles. click to feed them"></a>
+    </div>
+    <div id="pagedoll">
+        <img src="assets/main/sasaran.png">
+    </div>
+
+</body>
 </html>
