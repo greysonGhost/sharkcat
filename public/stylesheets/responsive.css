@@ -57,6 +57,7 @@
         list-style: none;
         margin-left: 0;
         padding-left: 1.2em;
+        list-style-position: outside;
     }
 
     ul li:before {
